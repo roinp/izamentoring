@@ -1,11 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 
+// Georgian "Five Cross Flag": central red cross + four small Bolnisi crosses.
+const BolnisiCross = ({ x, y, s = 1 }) => (
+  <path
+    transform={`translate(${x} ${y}) scale(${s})`}
+    fill="#E8112D"
+    d="M0,-10 C2,-6 6,-2 10,0 C6,2 2,6 0,10 C-2,6 -6,2 -10,0 C-6,-2 -2,-6 0,-10 Z"
+  />
+);
+
 const FlagGE = () => (
   <svg viewBox="0 0 30 20" className="lang-flag">
-    <rect width="30" height="20" fill="#fff"/>
-    <rect x="13" y="0" width="4" height="20" fill="#E8112D"/>
-    <rect x="0" y="8" width="30" height="4" fill="#E8112D"/>
+    <rect width="30" height="20" fill="#fff" />
+    <rect x="12.5" y="0" width="5" height="20" fill="#E8112D" />
+    <rect x="0" y="7.5" width="30" height="5" fill="#E8112D" />
+    <BolnisiCross x={6.25} y={3.75} s={0.34} />
+    <BolnisiCross x={23.75} y={3.75} s={0.34} />
+    <BolnisiCross x={6.25} y={16.25} s={0.34} />
+    <BolnisiCross x={23.75} y={16.25} s={0.34} />
   </svg>
 );
 
@@ -18,18 +31,9 @@ const FlagGB = () => (
   </svg>
 );
 
-const FlagRU = () => (
-  <svg viewBox="0 0 30 20" className="lang-flag">
-    <rect width="30" height="7" fill="#fff"/>
-    <rect y="7" width="30" height="6" fill="#0039A6"/>
-    <rect y="13" width="30" height="7" fill="#D52B1E"/>
-  </svg>
-);
-
 const languages = [
   { code: 'ka', label: 'GE', flag: <FlagGE /> },
   { code: 'en', label: 'EN', flag: <FlagGB /> },
-  { code: 'ru', label: 'RU', flag: <FlagRU /> },
 ];
 
 function Navbar() {
@@ -47,12 +51,12 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#home" className="nav-logo">
-          iza<span>con</span>
+          iza<span>mentoring</span>
         </a>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><a href="#home" onClick={() => setMenuOpen(false)}>{t('nav_home')}</a></li>
           <li><a href="#about" onClick={() => setMenuOpen(false)}>{t('nav_about')}</a></li>
-          <li><a href="#why" onClick={() => setMenuOpen(false)}>{t('nav_why')}</a></li>
+          {/* <li><a href="#why" onClick={() => setMenuOpen(false)}>{t('nav_why')}</a></li> */}
           <li><a href="#services" onClick={() => setMenuOpen(false)}>{t('nav_services')}</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>{t('nav_contact')}</a></li>
         </ul>

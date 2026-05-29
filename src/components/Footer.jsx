@@ -13,7 +13,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-grid">
         <div className="footer-brand">
-          <h3>iza<span>con</span></h3>
+          <h3>iza<span>mentoring</span></h3>
           <p>{t('footer_desc')}</p>
           <div className="footer-socials">
             <a href={LINKEDIN} target="_blank" rel="noreferrer" aria-label="LinkedIn"><FiLinkedin /></a>
@@ -30,14 +30,14 @@ function Footer() {
             <li><a href="#contact">{t('nav_contact')}</a></li>
           </ul>
         </div>
-        <div className="footer-col">
+        {/* <div className="footer-col">
           <h4>{t('footer_contact')}</h4>
           <ul>
             <li><a href={`mailto:${EMAIL}`}>{EMAIL}</a></li>
             <li><a href={`tel:${PHONE.replace(/\s/g, '')}`}>{PHONE}</a></li>
             <li><a href={LINKEDIN} target="_blank" rel="noreferrer">LinkedIn</a></li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} {t('footer_copyright')}</p>

@@ -9,7 +9,7 @@ function Hero() {
     <section className="hero" id="home">
       <div className="hero-container">
         <div className="hero-content">
-          {/* <span className="hero-tagline">izacon — career consulting</span> */}
+          {/* <span className="hero-tagline">izamentoring — career consulting</span> */}
           <h1>
             {t('hero_title_1')} <span className="accent">{t('hero_title_highlight')}</span> {t('hero_title_2')}
           </h1>
@@ -29,8 +29,8 @@ function Hero() {
         <div className="hero-visual">
           <div className="hero-image-wrap">
             <img
-              src={`${process.env.PUBLIC_URL}/izzalp.jpeg`}
-              alt="izacon workspace"
+              src={`${process.env.PUBLIC_URL}/2222.jpeg`}
+              alt="izamentoring workspace"
             />
           </div>
         </div>

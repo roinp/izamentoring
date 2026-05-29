@@ -25,7 +25,6 @@ function About() {
             <h2>{t('about_subtitle')}</h2>
             <p>{t('about_p1')}</p>
             <p>{t('about_p2')}</p>
-            <p>{t('about_p3')}</p>
             <div className="about-features">
               {features.map((f, i) => (
                 <div className="about-feature" key={i}>

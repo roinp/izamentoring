@@ -53,7 +53,7 @@ function Contact() {
       fd.append('Phone', formData.phone);
       fd.append('Subject', formData.subject);
       fd.append('Message', formData.message);
-      fd.append('_subject', `izacon — ${formData.subject || 'New contact request'}`);
+      fd.append('_subject', `izamentoring — ${formData.subject || 'New contact request'}`);
       fd.append('_template', 'table');
       fd.append('_captcha', 'false');
 
@@ -89,7 +89,7 @@ function Contact() {
     <section className="section section-contact" id="contact">
       <div className="container">
         <div className="section-title">
-          <span className="eyebrow">{t('contact_title')}</span>
+          {/* <span className="eyebrow">{t('contact_title')}</span> */}
           <h2>{t('contact_subtitle')}</h2>
         </div>
         <div className="contact-grid">
@@ -137,13 +137,13 @@ function Contact() {
                 value={formData.phone}
                 onChange={handleChange}
               />
-              <input
+              {/* <input
                 type="text"
                 name="subject"
                 placeholder={t('contact_subject')}
                 value={formData.subject}
                 onChange={handleChange}
-              />
+              /> */}
             </div>
             <textarea
               name="message"
