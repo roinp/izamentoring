@@ -6,14 +6,14 @@ const translations = {
     nav_why: 'რატომ არის მნიშვნელოვანი',
     nav_services: 'სერვისები',
     nav_contact: 'კონტაქტი',
-    nav_cta: 'დაჯავშნე უფასო სესია',
+    nav_cta: 'დაჯავშნე  სესია',
 
     // Hero
     hero_title_1: 'პრაქტიკული მხარდაჭერა',
     hero_title_highlight: 'CV-ის მომზადებისა',
     hero_title_2: 'და გასაუბრების ეტაპებზე',
     
-    hero_btn_primary: 'დაჯავშნე უფასო სესია',
+    hero_btn_primary: 'დაჯავშნე  სესია',
     // hero_btn_secondary: 'გაიგე მეტი',
 
     // Why Matters
@@ -82,13 +82,13 @@ const translations = {
     nav_why: 'Why It Matters',
     nav_services: 'Services',
     nav_contact: 'Contact',
-    nav_cta: 'Book a Free Session',
+    nav_cta: 'Book Session',
 
     hero_title_1: 'Practical support for',
     hero_title_highlight: 'CV preparation',
     hero_title_2: 'and interview stages',
     // hero_subtitle: 'Personal consulting that helps you present your experience clearly and land the role you want.',
-    hero_btn_primary: 'Book a Free Session',
+    hero_btn_primary: 'Book  Session',
     hero_btn_secondary: 'Learn More',
 
     why_title: 'Why does organizing your CV and LinkedIn matter?',
